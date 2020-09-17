@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Categories">
+            <menu>
+        <item
+            android:id="@+id/airport"
+            android:icon="@drawable/airport"
+            android:title="Airport" />
+        <item
+            android:id="@+id/atm"
+            android:icon="@drawable/atm"
+            android:title="Atm" />
+        <item
+            android:id="@+id/bank"
+            android:icon="@drawable/bank"
+            android:title="Bank" />
+
+        <item
+            android:id="@+id/bus_station"
+            android:icon="@drawable/bus"
+            android:title="Bus Stand" />
+        <item
+            android:id="@+id/church"
+            android:icon="@drawable/church"
+            android:title="Church" />
+        <item
+            android:id="@+id/doctor"
+            android:icon="@drawable/clinic"
+            android:title="Doctor" />
+        <item
+            android:id="@+id/hospital"
+            android:icon="@drawable/hospital"
+            android:title="Hospital" />
+        <item
+            android:id="@+id/mosque"
+            android:icon="@drawable/mosque"
+            android:title="Mosque" />
+        <item
+            android:id="@+id/movie_theatre"
+            android:icon="@drawable/theatre"
+            android:title="Movie Theatre" />
+
+        <item
+            android:id="@+id/hindu_temple"
+            android:icon="@drawable/temple"
+            android:title="Hindu Temple" />
+        <item
+            android:id="@+id/restaurant"
+            android:icon="@drawable/rest"
+            android:title="Restaurant" />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/tra"
+            android:icon="@drawable/trav"
+            android:title="Travel" />
+        <item
+            android:id="@+id/sav"
+            android:icon="@drawable/sav"
+            android:title="Saved Locations" />
+
+        <item
+                    android:id="@+id/us"
+                    android:title="About Us" />
+                <item
+                    android:id="@+id/app"
+                    android:title="About app" />
+
+
+
+
+    </group>
+
+
+
+
+</menu>
+

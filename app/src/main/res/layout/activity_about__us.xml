@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0FFFF"
+    tools:context="com.example.arpita.try1.About_Us"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#20B2AA"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:id="@+id/dev"
+        android:fontFamily="cursive"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_marginBottom="20dp"
+        android:textSize="25dp"
+        android:text="Developers"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/arp"
+        android:src="@drawable/arp"
+        android:layout_marginBottom="20sp"
+        android:layout_below="@+id/dev"
+        android:layout_alignEnd="@+id/dev" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arpita Singh"
+        android:layout_toEndOf="@+id/arp"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:id="@+id/arpdet"
+        android:fontFamily="cursive"
+        android:layout_alignTop="@+id/arp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="arpita5572@gmail.com"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_below="@+id/arpdet"
+        android:layout_toEndOf="@+id/arp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+
+        android:src="@drawable/chn"
+
+        android:id="@+id/imageView2"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/arp"
+        android:layout_marginBottom="20sp"
+        android:layout_toStartOf="@+id/chndet" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chandan Suri"
+        android:layout_toEndOf="@+id/arp"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:id="@+id/chndet"
+        android:fontFamily="cursive"
+        android:layout_alignTop="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="csuri2129621296@gmail.com"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_below="@+id/chndet"
+        android:layout_alignStart="@+id/chndet" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+
+        android:src="@drawable/roh"
+        android:id="@+id/roh"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rohit Semwal"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:id="@+id/rohdet"
+        android:fontFamily="cursive"
+        android:layout_alignTop="@+id/roh"
+        android:layout_alignEnd="@+id/chndet" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="thisisrohit16@gmail.com"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_below="@+id/rohdet"
+        android:layout_alignStart="@+id/rohdet" />
+
+
+</RelativeLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/my_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#20B2AA"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+<ScrollView
+    android:id="@+id/place_detail_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/random"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        android:paddingTop="20dp">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="Name :"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:fontFamily="casual"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+
+            android:id="@+id/place_name"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+
+            android:text="Address :"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textColor="@android:color/black"
+
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:autoLink="map"
+            android:id="@+id/address"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+
+            android:text="Phone Number :"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+
+            android:autoLink="phone"
+            android:id="@+id/phone_no"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+
+            android:textSize="20sp"
+            android:text="Latitude :"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:paddingTop="10dp"
+            android:textColor="@android:color/black"
+
+            android:textSize="20sp"
+            android:id="@+id/latitude"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textColor="@android:color/black"
+
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:text="Longitude :"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+
+            android:id="@+id/longitude"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textColor="@android:color/black"
+
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:text="Vicinity :"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:paddingTop="10dp"
+            android:textColor="@android:color/black"
+
+            android:textSize="20sp"
+            android:id="@+id/vicinity"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textColor="@android:color/black"
+
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:text="Website :"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+
+            android:autoLink="web"
+            android:id="@+id/website"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textColor="@android:color/black"
+
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:text="International Phone Number :"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+
+            android:id="@+id/in_phone_no"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+
+            android:textSize="20sp"
+            android:text="Rating :"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+
+            android:id="@+id/rating"/>
+
+    </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="getDirection"
+            android:text="Get Directions"
+            android:id="@+id/direction_btn"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textColor="@android:color/white"
+            android:background="#696969"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="15dp"/>
+</LinearLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleLarge"
+            android:id="@+id/progressBar2"/>
+    </LinearLayout>
+
+
+</ScrollView>
+    </LinearLayout>
+
